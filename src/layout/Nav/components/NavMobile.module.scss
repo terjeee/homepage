@@ -1,12 +1,6 @@
 @use "../../../css/variables/layout.scss";
 @use "../../../css/variables/breakpoint.scss";
 
-@include breakpoint.laptop {
-  .container {
-    display: none;
-  }
-}
-
 .container {
   margin: auto;
   max-width: layout.$page-width;
@@ -14,4 +8,10 @@
 
   display: flex;
   justify-content: flex-end;
+}
+
+@include breakpoint.laptop {
+  .container {
+    display: none;
+  }
 }

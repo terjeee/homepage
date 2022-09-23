@@ -1,3 +1,6 @@
+@use "../../css/variables/color.scss";
+
 .app {
   min-height: 100vh;
+  background: color.$bg-2;
 }
