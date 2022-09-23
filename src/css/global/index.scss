@@ -12,3 +12,11 @@ body {
   font-size: 1.6rem;
   //   font-family: ;
 }
+
+// Universal
+
+a {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
