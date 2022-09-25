@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const SvgIconReactRedux = (props) => (
+const SvgIconRedux = (props) => (
   <svg
     width="1em"
     height="1em"
@@ -16,4 +16,4 @@ const SvgIconReactRedux = (props) => (
   </svg>
 );
 
-export default SvgIconReactRedux;
+export default SvgIconRedux;
