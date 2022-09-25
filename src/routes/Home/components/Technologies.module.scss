@@ -1,0 +1,16 @@
+@use "../../../css/variables/breakpoint.scss";
+@use "../../../css/variables/layout.scss";
+
+.technologies {
+  background: url("../../../assets/");
+  height: 10rem;
+
+  .container {
+    margin: auto;
+    max-width: layout.$page-width;
+    padding: layout.$page-padding;
+
+    .icons {
+    }
+  }
+}

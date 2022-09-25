@@ -1,0 +1,13 @@
+export { default as BgWaves1 } from "./BgWaves1";
+export { default as BgWaves2 } from "./BgWaves2";
+export { default as IconCss2 } from "./IconCss2";
+export { default as IconCss } from "./IconCss";
+export { default as IconHtml2 } from "./IconHtml2";
+export { default as IconHtml } from "./IconHtml";
+export { default as IconJavascript } from "./IconJavascript";
+export { default as IconJs } from "./IconJs";
+export { default as IconMui } from "./IconMui";
+export { default as IconReactRedux } from "./IconReactRedux";
+export { default as IconReactRouter } from "./IconReactRouter";
+export { default as IconReact } from "./IconReact";
+export { default as IconSass } from "./IconSass";
