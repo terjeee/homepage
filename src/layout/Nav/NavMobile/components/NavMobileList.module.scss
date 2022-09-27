@@ -1,0 +1,27 @@
+@use "../../../../css/variables/layout.scss";
+
+.container {
+  padding-top: calc(layout.$page-padding * 2);
+  padding-bottom: calc(layout.$page-padding / 2);
+  transform: all 1s ease-in-out;
+
+  .list {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    li {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      button {
+        svg {
+          padding: auto;
+          align-self: center;
+        }
+      }
+    }
+  }
+}

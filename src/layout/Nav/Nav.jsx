@@ -1,13 +1,11 @@
-import NavMobile from "./components/NavMobile";
-import NavDesktop from "./components/NavDesktop";
-
-import css from "./Nav.module.scss";
+import NavMobile from "./NavMobile/NavMobile";
+import NavDesktop from "./NavDesktop/NavDesktop";
 
 export default function Nav() {
   return (
-    <nav className={css.nav}>
+    <>
       <NavMobile />
       <NavDesktop />
-    </nav>
+    </>
   );
 }

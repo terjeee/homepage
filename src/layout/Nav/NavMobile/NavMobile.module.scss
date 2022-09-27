@@ -1,0 +1,40 @@
+@use "../../../css/variables/color.scss";
+@use "../../../css/variables/layout.scss";
+@use "../../../css/variables/breakpoint.scss";
+
+.nav {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-radius: layout.$border-radius layout.$border-radius 0 0;
+  box-shadow: layout.$box-shadow;
+
+  .container {
+    margin: auto;
+    max-width: layout.$page-width;
+    padding: layout.$page-padding;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  h2 {
+    span {
+      color: color.$tone-2;
+    }
+  }
+
+  button {
+    svg {
+      display: block;
+      font-size: 2rem;
+    }
+  }
+}
+
+@include breakpoint.laptop {
+  .nav {
+    display: none;
+  }
+}
