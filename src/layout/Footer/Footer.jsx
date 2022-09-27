@@ -1,4 +1,3 @@
-import GitHubIcon from "@mui/icons-material/GitHub";
 import css from "./Footer.module.scss";
 
 export default function Footer() {
@@ -7,7 +6,7 @@ export default function Footer() {
       <div className={css.line}>
         <div className={css.container}>
           <a href="https://www.github.com/terjeee" target="_blank" rel="noreferrer">
-            <GitHubIcon />
+            GITHUB
           </a>
         </div>
       </div>

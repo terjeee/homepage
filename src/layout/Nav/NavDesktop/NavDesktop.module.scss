@@ -1,0 +1,14 @@
+@use "../../../css/variables/layout.scss";
+@use "../../../css/variables/breakpoint.scss";
+
+@include breakpoint.mobile {
+  .container {
+    display: none;
+  }
+}
+
+.container {
+  margin: auto;
+  max-width: layout.$page-width;
+  padding: layout.$page-padding;
+}

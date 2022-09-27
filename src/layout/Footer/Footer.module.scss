@@ -3,33 +3,16 @@
 @use "../../css/variables/layout.scss";
 
 .footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
   padding: 1rem 0;
   background: color.$bg-1;
   color: color.$text-1;
 
   .line {
-    background: color.$bg-1-shade;
-    margin: 2rem 0 4rem 0;
-
     .container {
       margin: auto;
       max-width: layout.$page-width;
       padding: layout.$page-padding;
-
-      display: flex;
-      justify-content: center;
-
-      a {
-        margin: 1.5rem;
-
-        svg {
-          font-size: 3rem;
-          display: block;
-        }
-      }
     }
   }
 }
