@@ -5,11 +5,9 @@ import Home from "./routes/Home/Home";
 import Experiment from "./routes/Experiment/Experiment";
 import Footer from "./layout/Footer/Footer";
 
-import "./css/global/app.scss";
-
 function App() {
   return (
-    <div className="app">
+    <div>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
