@@ -13,7 +13,6 @@ export default function NavMobile() {
 
   return (
     <nav className={css.nav}>
-      {menuOpen && <NavMobileList toggleMenuOpen={toggleMenuOpen} />}
       <div className={css.container}>
         <div>
           {!menuOpen && (
@@ -26,6 +25,7 @@ export default function NavMobile() {
         </div>
         <button onClick={handleToggleMenu}>{menuOpen ? <CloseIcon /> : <MenuIcon />}</button>
       </div>
+      {menuOpen && <NavMobileList toggleMenuOpen={toggleMenuOpen} />}
     </nav>
   );
 }

@@ -3,32 +3,41 @@
 @use "../../../css/variables/breakpoint.scss";
 
 .nav {
-  z-index: 1000;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  border-radius: layout.$border-radius layout.$border-radius 0 0;
+  position: relative;
+  // z-index: 1000;
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
   box-shadow: layout.$box-shadow;
 
   .container {
     margin: auto;
     max-width: layout.$page-width;
-    padding: layout.$page-padding;
+    padding: calc(layout.$page-padding / 2);
 
     display: flex;
     justify-content: space-between;
   }
 
   h2 {
+    padding: calc(layout.$page-padding / 2);
+
     span {
-      color: color.$tone-2;
+      color: color.$one;
     }
   }
 
   button {
+    padding: calc(layout.$page-padding / 2);
+
     svg {
       display: block;
       font-size: 2rem;
+    }
+
+    &:hover {
+      background-color: color.$bg-1-shade;
+      border-radius: 50%;
     }
   }
 }
