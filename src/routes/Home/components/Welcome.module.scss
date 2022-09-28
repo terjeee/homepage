@@ -3,9 +3,10 @@
 @use "../../../css/variables/breakpoint.scss";
 
 .welcome {
-  height: 50vh;
+  height: 30vh;
   color: color.$text-1;
   background: color.$bg-1;
+  // margin-top: 70px; // hvis Nav = fixed (top:0)
 
   .container {
     display: flex;
@@ -14,18 +15,7 @@
     height: 100%;
     max-width: layout.$page-width;
     margin: auto;
-    padding: layout.$page-padding;
-
-    .text {
-      margin-top: 50px;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-
-    .image {
-      display: none;
-    }
+    padding: 0 layout.$page-padding;
   }
 }
 
