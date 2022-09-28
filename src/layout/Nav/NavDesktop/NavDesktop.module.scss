@@ -7,8 +7,17 @@
   }
 }
 
-.container {
-  margin: auto;
-  max-width: layout.$page-width;
-  padding: layout.$page-padding;
+.nav {
+  position: relative;
+  // z-index: 1000;
+  // position: fixed;
+  // top: 0;
+  // width: 100%;
+  box-shadow: layout.$box-shadow;
+
+  .container {
+    margin: auto;
+    max-width: layout.$page-width;
+    padding: layout.$page-padding;
+  }
 }
