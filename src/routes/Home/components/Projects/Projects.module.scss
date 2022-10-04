@@ -1,0 +1,9 @@
+@use "../../../../css/variables/layout.scss";
+
+.projects {
+  .container {
+    max-width: layout.$page-width;
+    margin: auto;
+    padding: layout.$page-padding;
+  }
+}
