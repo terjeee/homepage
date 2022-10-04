@@ -4,7 +4,7 @@
 
 .nav {
   position: relative;
-  // z-index: 1000;
+  z-index: 1000;
   // position: fixed;
   // top: 0;
   // width: 100%;
@@ -29,6 +29,7 @@
 
   button {
     padding: calc(layout.$page-padding / 2);
+    margin-right: -2px;
 
     svg {
       display: block;
@@ -36,8 +37,9 @@
     }
 
     &:hover {
-      background-color: color.$bg-1-shade;
+      background: color.$bg-1-shade;
       border-radius: 50%;
+      transition: background 250ms ease-in-out;
     }
   }
 }
