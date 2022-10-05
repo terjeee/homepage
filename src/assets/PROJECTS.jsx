@@ -4,13 +4,13 @@ export const PROJECTS = [
     link: "https://terjeee.github.io/2022-09-04-rest-countries-api/",
     linkRepo: "https://github.com/terjeee/2022-09-04-rest-countries-api",
     title: "Countries API",
-    text: "Pulls data from an API, with each country having a separate route with more details.",
+    text: "Pulls data from an API. Each country has a separate route with more details.",
   },
   {
     id: 2,
     link: "https://terjeee.github.io/2022-08-21-bank-landing-page/",
     linkRepo: "https://github.com/terjeee/2022-08-21-bank-landing-page",
-    title: "Landing Page (Easybank)",
+    title: "EasyBank",
     text: "Dummy landing page for a bank.",
   },
   {
@@ -32,7 +32,7 @@ export const PROJECTS = [
     link: "https://terjeee.github.io/2022.05.27-Advice-Generator/",
     linkRepo: "https://github.com/terjeee/2022.05.27-Advice-Generator",
     title: "Advice Generator",
-    text: "Pulls advices fron an API.",
+    text: "Pulls advice from an API.",
   },
   {
     id: 6,
