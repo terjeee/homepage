@@ -1,7 +1,59 @@
-.project {
-  position: relative;
+@use "../../../../../css/variables/layout.scss";
+@use "../../../../../css/variables/color.scss";
+@use "../../../../../css/variables/font.scss";
 
-  .text {
-    position: absolute;
+.project {
+  padding: 1rem;
+  border-radius: layout.$border-radius;
+  box-shadow: layout.$box-shadow;
+
+  .title {
+    display: flex;
+    margin-bottom: 1rem;
+
+    svg {
+      width: 20px;
+      margin-right: 0.4rem;
+    }
+
+    a {
+      font-size: font.$size-l;
+      font-weight: font.$weight-l;
+      color: color.$link;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    .label {
+      padding: 0.1rem 0.35rem;
+      margin: auto 0.5rem;
+      font-size: 12px;
+      font-weight: font.$weight-l;
+      color: rgba(0, 0, 0, 0.8);
+      border: 1px solid darkgrey;
+      border-radius: 10px;
+    }
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .dot {
+      flex-shrink: 0;
+      height: 15px;
+      width: 15px;
+      background-color: #f1e05a;
+      border-radius: 50%;
+    }
+
+    .text {
+      word-wrap: break-word;
+      margin-left: 0.5rem;
+      font-size: font.$size-m;
+    }
   }
 }

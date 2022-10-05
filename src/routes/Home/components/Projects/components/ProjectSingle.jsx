@@ -1,13 +1,20 @@
+import { GithubRepo } from "../../../../../assets/icons/index";
 import css from "./ProjectSingle.module.scss";
 
 export default function ProjectSingle(props) {
   return (
-    <article className={css.project}>
-      <img src={props.img} alt={props.imgAlt} />
-      <div className={css.text}>
-        <h2>{props.title} title</h2>
-        <p>{props.text} text</p>
+    <li className={css.project}>
+      <div className={css.title}>
+        <GithubRepo />
+        <a href={props.link} target="_blank" rel="noreferrer">
+          {props.title}
+        </a>
+        <span className={css.label}>Public</span>
       </div>
-    </article>
+      <div>
+        <span className={css.dot}></span>
+        <p className={css.text}>{props.text}</p>
+      </div>
+    </li>
   );
 }
