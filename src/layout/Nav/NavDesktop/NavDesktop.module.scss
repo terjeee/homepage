@@ -1,3 +1,4 @@
+@use "../../../css/variables/color.scss";
 @use "../../../css/variables/layout.scss";
 @use "../../../css/variables/breakpoint.scss";
 
@@ -19,5 +20,13 @@
     margin: auto;
     max-width: layout.$page-width;
     padding: layout.$page-padding;
+
+    h2 {
+      padding: calc(layout.$page-padding / 2);
+
+      span {
+        color: color.$one;
+      }
+    }
   }
 }
