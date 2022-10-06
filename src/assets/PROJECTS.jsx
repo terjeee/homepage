@@ -3,6 +3,7 @@ export const PROJECTS = [
     id: 1,
     link: "https://terjeee.github.io/2022-09-04-rest-countries-api/",
     linkRepo: "https://github.com/terjeee/2022-09-04-rest-countries-api",
+    colorDot: "#F1E05A",
     title: "Countries API",
     text: "Pulls data from an API. Each country has a separate route with more details.",
   },
@@ -11,6 +12,7 @@ export const PROJECTS = [
     link: "https://terjeee.github.io/2022-08-21-bank-landing-page/",
     linkRepo: "https://github.com/terjeee/2022-08-21-bank-landing-page",
     title: "EasyBank",
+    colorDot: "#F1E05A",
     text: "Dummy landing page for a bank.",
   },
   {
@@ -18,6 +20,7 @@ export const PROJECTS = [
     link: "https://terjeee.github.io/2022-08-14-ip-address-tracker/",
     linkRepo: "https://github.com/terjeee/2022-08-14-ip-address-tracker",
     title: "IP Address Tracker",
+    colorDot: "#F1E05A",
     text: "Shows the location of an IP address on a map.",
   },
   {
@@ -25,6 +28,7 @@ export const PROJECTS = [
     link: " https://terjeee.github.io/2022-08-10-calculator-app/",
     linkRepo: "https://github.com/terjeee/2022-08-10-calculator-app",
     title: "Calculator",
+    colorDot: "#F1E05A",
     text: ":)",
   },
   {
@@ -32,6 +36,7 @@ export const PROJECTS = [
     link: "https://terjeee.github.io/2022.05.27-Advice-Generator/",
     linkRepo: "https://github.com/terjeee/2022.05.27-Advice-Generator",
     title: "Advice Generator",
+    colorDot: "#563D7C",
     text: "Pulls advice from an API.",
   },
   {
@@ -39,6 +44,7 @@ export const PROJECTS = [
     link: "https://terjeee.github.io/2022.02.12-GuessNumber/",
     linkRepo: "https://github.com/terjeee/2022.02.12-GuessNumber",
     title: "Guess the Number",
+    colorDot: "#F1E05A",
     text: "NB: Skrev bare JS.",
   },
 ];
