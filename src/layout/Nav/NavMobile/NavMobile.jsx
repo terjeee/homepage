@@ -19,7 +19,7 @@ export default function NavMobile() {
             <h2>
               {"<"}
               <span>terje</span>
-              {" />"}
+              {"/>"}
             </h2>
           )}
         </div>

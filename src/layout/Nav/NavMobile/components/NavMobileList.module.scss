@@ -29,6 +29,14 @@
           margin-left: -2px;
           // margin-bottom: -2.5px;
         }
+
+        h3 {
+          &:hover {
+            background: color.$bg-1-shade;
+            border-radius: 50%;
+            transition: background 250ms ease-in-out;
+          }
+        }
       }
     }
   }

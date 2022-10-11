@@ -5,9 +5,9 @@
 .nav {
   position: relative;
   z-index: 1000;
-  // position: fixed;
-  // top: 0;
-  // width: 100%;
+  position: fixed;
+  top: 0;
+  width: 100%;
   box-shadow: layout.$box-shadow;
 
   .container {
@@ -17,10 +17,12 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   h2 {
     padding: calc(layout.$page-padding / 2);
+    font-size: 1.25rem;
 
     span {
       color: color.$one;
@@ -32,7 +34,7 @@
 
     svg {
       display: block;
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
 
     &:hover {
