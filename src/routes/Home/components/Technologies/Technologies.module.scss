@@ -1,0 +1,17 @@
+@use "../../../../css/variables/breakpoint.scss";
+@use "../../../../css/variables/layout.scss";
+
+.technologies {
+  margin-bottom: 4rem;
+  box-shadow: layout.$box-shadow;
+
+  .container {
+    margin: auto;
+    max-width: layout.$page-width;
+    padding: 0 layout.$page-padding;
+  }
+
+  // .svg__waves2 {
+  //   transform: rotate(180deg);
+  // }
+}

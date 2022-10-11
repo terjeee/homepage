@@ -1,0 +1,13 @@
+.icons {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+
+  li {
+    svg {
+      display: block;
+      font-size: 3rem;
+    }
+  }
+}
