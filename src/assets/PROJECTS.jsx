@@ -45,6 +45,6 @@ export const PROJECTS = [
     linkRepo: "https://github.com/terjeee/2022.02.12-GuessNumber",
     title: "Guess the Number",
     colorDot: "#F1E05A",
-    text: "NB: Skrev bare JS.",
+    text: "(:",
   },
 ];
