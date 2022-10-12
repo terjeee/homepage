@@ -3,7 +3,7 @@
 @use "../../../../css/variables/breakpoint.scss";
 
 .welcome {
-  height: calc(100vh + 0.01px);
+  height: 100%;
   color: color.$text-1;
   background: color.$bg-1;
   // margin-top: 70px; // hvis Nav = fixed (top:0)
@@ -11,15 +11,16 @@
   .container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 
     height: 100%;
     max-width: layout.$page-width;
-    margin: auto;
     padding: 0 layout.$page-padding;
 
     .text {
       display: flex;
       align-items: center;
+      margin: auto 0;
     }
   }
 }
