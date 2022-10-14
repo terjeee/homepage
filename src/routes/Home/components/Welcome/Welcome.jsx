@@ -1,17 +1,16 @@
 import { TypeAnimation } from "react-type-animation";
-import TechnologiesList from "../Technologies/components/TechnologiesList";
 import css from "./Welcome.module.scss";
 
 export default function Welcome() {
   return (
-    <header className={css.welcome}>
+    <header className={css.welcome} id="home">
       <div className={css.container}>
         <div className={css.text}>
           <TypeAnimation
             sequence={[
               "Hei",
               3000,
-              "Bonjour",
+              "Bonjour ",
               3000,
               "こんにちは",
               3000,
@@ -21,7 +20,7 @@ export default function Welcome() {
               3000,
               "Guten Tag",
               3000,
-              "नमस्ते",
+              "مرحبا",
               3000,
             ]}
             wrapper="h1"
@@ -32,12 +31,9 @@ export default function Welcome() {
               fontSize: "3rem",
               fontFamily: "inherit",
               color: "inherit",
-              letterSpacing: "2.5px",
+              letterSpacing: "7.5px",
             }}
           />
-        </div>
-        <div className={css.technologies}>
-          <TechnologiesList />
         </div>
       </div>
     </header>
