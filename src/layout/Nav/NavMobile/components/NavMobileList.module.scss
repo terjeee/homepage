@@ -13,30 +13,25 @@
 
   .list {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 2rem;
 
     li {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      .icon {
+        display: block;
+        padding: calc(layout.$page-padding / 2);
+        margin: auto;
 
-      button {
         svg {
-          padding: auto;
-          margin-left: -2px;
-          // margin-bottom: -2.5px;
+          display: block;
+          font-size: 1.5rem;
         }
+      }
 
-        h3 {
-          &:hover {
-            background: color.$bg-1-shade;
-            border-radius: 50%;
-            transition: background 250ms ease-in-out;
-          }
-        }
+      &:hover .icon {
+        background: color.$bg-1-shade;
+        border-radius: 50%;
+        transition: background 250ms ease-in-out;
       }
     }
   }

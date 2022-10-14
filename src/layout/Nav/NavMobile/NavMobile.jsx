@@ -19,11 +19,13 @@ export default function NavMobile() {
             <h2>
               {"<"}
               <span>terje</span>
-              {"/>"}
+              {" />"}
             </h2>
           )}
         </div>
-        <button onClick={handleToggleMenu}>{menuOpen ? <CloseIcon /> : <MenuIcon />}</button>
+        <button className={css.hamburgerMenu} onClick={handleToggleMenu}>
+          {menuOpen ? <CloseIcon /> : <MenuIcon />}
+        </button>
       </div>
       {menuOpen && <NavMobileList toggleMenuOpen={toggleMenuOpen} />}
     </nav>

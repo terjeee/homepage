@@ -17,21 +17,27 @@ export default function NavMobileList(props) {
     <div className={css.container}>
       <ul className={css.list}>
         <li>
-          <Link to="/" onClick={handleNavigate}>
-            <HomeOutlinedIcon />
-            <h3>Home</h3>
-          </Link>
+          <HashLink smooth to="/#home" onClick={handleNavigate}>
+            <button className={css.icon}>
+              <HomeOutlinedIcon />
+            </button>
+            <h3>home</h3>
+          </HashLink>
         </li>
         <li>
           <HashLink smooth to="/#projects" onClick={handleNavigate}>
-            <CodeIcon />
-            <h3>Projects</h3>
+            <button className={css.icon}>
+              <CodeIcon />
+            </button>
+            <h3>projects</h3>
           </HashLink>
         </li>
         <li>
           <Link to="/contact" onClick={handleNavigate}>
-            <MailOutlineIcon />
-            <h3>Contact</h3>
+            <button className={css.icon}>
+              <MailOutlineIcon />
+            </button>
+            <h3>contact</h3>
           </Link>
         </li>
       </ul>
