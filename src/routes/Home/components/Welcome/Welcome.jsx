@@ -10,15 +10,13 @@ export default function Welcome() {
             sequence={[
               "Hei",
               3000,
-              "Bonjour ",
+              "Bonjour",
               3000,
               "こんにちは",
               3000,
               "Ciao",
               3000,
               "你好",
-              3000,
-              "Guten Tag",
               3000,
               "مرحبا",
               3000,
@@ -28,7 +26,7 @@ export default function Welcome() {
             cursor={true}
             repeat={Infinity}
             style={{
-              fontSize: "3rem",
+              fontSize: "2.75rem",
               fontFamily: "inherit",
               color: "inherit",
               letterSpacing: "7.5px",

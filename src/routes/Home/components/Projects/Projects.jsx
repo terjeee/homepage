@@ -1,13 +1,17 @@
 import { PROJECTS } from "../../../../assets/PROJECTS";
 
+import Haikei from "../../../../assets/images/WaveHaikei1";
+import TechnologiesList from "./components/TechnologiesList";
 import ProjectSingle from "./components/ProjectSingle";
 import css from "./Projects.module.scss";
 
 export default function Projects() {
   return (
     <section className={css.projects} id="projects">
+      {/* <Haikei /> */}
       <div className={css.container}>
         <h2>PROJECTS</h2>
+        <TechnologiesList />
         <ul className={css.list}>
           {PROJECTS.map((el) => (
             <ProjectSingle
