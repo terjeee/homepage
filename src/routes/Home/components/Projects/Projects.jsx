@@ -1,6 +1,7 @@
 import { PROJECTS } from "../../../../assets/PROJECTS";
 
 import Haikei from "../../../../assets/images/WaveHaikei1";
+import { TypeAnimation } from "react-type-animation";
 import TechnologiesList from "./components/TechnologiesList";
 import ProjectSingle from "./components/ProjectSingle";
 import css from "./Projects.module.scss";
@@ -10,7 +11,31 @@ export default function Projects() {
     <section className={css.projects} id="projects">
       {/* <Haikei /> */}
       <div className={css.container}>
-        <h2>PROJECTS</h2>
+        <TypeAnimation
+          sequence={[
+            "Prosjekter",
+            5000,
+            "проекты",
+            5000,
+            "progetti",
+            5000,
+            "プロジェクト",
+            5000,
+            "项目",
+            5000,
+            "المشاريع",
+            5000,
+          ]}
+          wrapper="h1"
+          speed="1"
+          cursor={true}
+          repeat={Infinity}
+          style={{
+            fontFamily: "inherit",
+            color: "inherit",
+            letterSpacing: "7.5px",
+          }}
+        />
         <TechnologiesList />
         <ul className={css.list}>
           {PROJECTS.map((el) => (
