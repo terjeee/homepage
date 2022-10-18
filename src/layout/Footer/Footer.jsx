@@ -1,3 +1,8 @@
+import { Link } from "react-router-dom";
+
+import GitHubIcon from "@mui/icons-material/GitHub";
+import MailOutlineIcon from "@mui/icons-material/MailOutline";
+
 import css from "./Footer.module.scss";
 
 export default function Footer() {
@@ -6,8 +11,11 @@ export default function Footer() {
       <div className={css.line}>
         <div className={css.container}>
           <a href="https://www.github.com/terjeee" target="_blank" rel="noreferrer">
-            GITHUB
+            <GitHubIcon />
           </a>
+          <Link to="/contact">
+            <MailOutlineIcon />
+          </Link>
         </div>
       </div>
     </footer>

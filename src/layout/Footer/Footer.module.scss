@@ -5,13 +5,20 @@
 .footer {
   width: 100%;
   padding: 1rem 0;
-  background: color.$bg-1-shade;
+  background: color.$bg-1;
 
   .line {
     .container {
       margin: auto;
       max-width: layout.$page-width;
       padding: layout.$page-padding;
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+
+      svg {
+        display: block;
+      }
     }
   }
 }
