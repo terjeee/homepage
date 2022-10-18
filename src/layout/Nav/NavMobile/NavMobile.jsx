@@ -32,7 +32,7 @@ export default function NavMobile() {
           {menuOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
       </div>
-      {menuOpen && <NavMobileList toggleMenuOpen={toggleMenuOpen} />}
+      {menuOpen && <NavMobileList toggleMenuOpen={handleToggleMenu} />}
     </nav>
   );
 }

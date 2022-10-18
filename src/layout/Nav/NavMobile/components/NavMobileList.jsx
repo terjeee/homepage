@@ -4,20 +4,19 @@ import { HashLink } from "react-router-hash-link";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 import CodeIcon from "@mui/icons-material/Code";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
+
 import css from "./NavMobileList.module.scss";
 
 export default function NavMobileList(props) {
-  const { toggleMenuOpen } = props;
-
-  const handleNavigate = () => {
-    toggleMenuOpen();
+  const handleCloseMenu = () => {
+    props.toggleMenuOpen();
   };
 
   return (
     <div className={css.container}>
       <ul className={css.list}>
         <li>
-          <HashLink smooth to="/#home" onClick={handleNavigate}>
+          <HashLink smooth to="/#home" onClick={handleCloseMenu}>
             <button className={css.icon}>
               <HomeOutlinedIcon />
             </button>
@@ -25,7 +24,7 @@ export default function NavMobileList(props) {
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#projects" onClick={handleNavigate}>
+          <HashLink smooth to="/#projects" onClick={handleCloseMenu}>
             <button className={css.icon}>
               <CodeIcon />
             </button>
@@ -33,7 +32,7 @@ export default function NavMobileList(props) {
           </HashLink>
         </li>
         <li>
-          <Link to="/contact" onClick={handleNavigate}>
+          <Link to="/contact" onClick={handleCloseMenu}>
             <button className={css.icon}>
               <MailOutlineIcon />
             </button>
