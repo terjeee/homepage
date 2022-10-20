@@ -1,0 +1,12 @@
+@use "../../css/variables/layout.scss";
+@use "../../css/variables/color.scss";
+@use "../../css/variables/font.scss";
+
+.page {
+  min-height: 100vh;
+
+  .container {
+    max-width: layout.$page-width;
+    margin: auto;
+  }
+}
