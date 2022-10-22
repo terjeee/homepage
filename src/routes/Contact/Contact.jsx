@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 import emailjs from "emailjs-com";
 
 import css from "./Contact.module.scss";
@@ -6,11 +7,14 @@ import css from "./Contact.module.scss";
 const regexEmail = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 export default function Contact() {
+  const navigate = useNavigate();
+
   const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
   const [emailValid, setEmailValid] = useState(false);
+  const [message, setMessage] = useState("");
   const [messageValid, setMessageValid] = useState(false);
 
+  const formData = useRef();
   const formValid =
     email.length > 0 && regexEmail.test(email) && message.length > 10 && message.length < 250;
 
@@ -34,23 +38,22 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs
-    //   .sendForm(
-    //     "service_contactForm",
-    //     "template_70fzocf",
-    //     formData.current,
-    //     "6hbDSK_0uSjg0vdP5"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result);
-    //       setFormSuccess("Message Sent!");
-    //     },
-    //     (error) => {
-    //       console.log(error.text);
-    // setFormError(`Error: ${error.text}`);
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_contactForm",
+        "template_70fzocf",
+        formData.current,
+        "6hbDSK_0uSjg0vdP5"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          return navigate("/contact-success");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
 
     alert("Sent");
   };
@@ -58,7 +61,7 @@ export default function Contact() {
   return (
     <section className={css.page}>
       <div className={css.container}>
-        <form className={css.form} onSubmit={sendEmail}>
+        <form className={css.form} onSubmit={sendEmail} ref={formData}>
           <div>
             <label htmlFor="formEmail">Email</label>
             <input
