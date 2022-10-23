@@ -59,32 +59,36 @@ export default function Contact() {
   };
 
   return (
-    <section className={css.page}>
-      <div className={css.container}>
-        <form className={css.form} onSubmit={sendEmail} ref={formData}>
-          <div>
-            <label htmlFor="formEmail">Email</label>
-            <input
-              type="email"
-              name="formEmail"
-              id="formEmail"
-              onChange={(event) => setEmail(event.target.value)}
-            />
-            {!emailValid && <p>Please enter a valid email.</p>}
-          </div>
-          <div>
-            <label htmlFor="formMsg">Message</label>
-            <input
-              type="text"
-              name="formMsg"
-              id="formMsg"
-              onChange={(event) => setMessage(event.target.value)}
-            />
-            {!messageValid && <p>Message needs to be between 10-250 characters.</p>}
-          </div>
-          <button disabled={!formValid}>Send</button>
-        </form>
-      </div>
-    </section>
+    <div className={css.container}>
+      <h1>CONTACT</h1>
+      <form className={css.contactForm} onSubmit={sendEmail} ref={formData}>
+        <div className={css.formControl}>
+          {/* <label htmlFor="formEmail">Email</label> */}
+          <input
+            type="email"
+            placeholder="Email"
+            name="formEmail"
+            id="formEmail"
+            onChange={(event) => setEmail(event.target.value)}
+          />
+          {!emailValid && <p className={css.invalidMsg}>Please enter a valid email.</p>}
+        </div>
+        <div className={css.formControl}>
+          {/* <label htmlFor="formMsg">Message</label> */}
+          <textarea
+            name="formMsg"
+            placeholder="Message"
+            id="formMsg"
+            onChange={(event) => setMessage(event.target.value)}
+          />
+          {!messageValid && (
+            <p className={css.invalidMsg}>Message needs to be between 10-250 characters.</p>
+          )}
+        </div>
+        <button className={css.btnSendEmail} disabled={!formValid}>
+          SEND
+        </button>
+      </form>
+    </div>
   );
 }
