@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { handleScrollToTop } from "../../utils/functions/helpers";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
@@ -13,7 +14,7 @@ export default function Footer() {
           <a href="https://www.github.com/terjeee" target="_blank" rel="noreferrer">
             <GitHubIcon />
           </a>
-          <Link to="/contact">
+          <Link to="/contact" onClick={handleScrollToTop}>
             <MailOutlineIcon />
           </Link>
         </div>

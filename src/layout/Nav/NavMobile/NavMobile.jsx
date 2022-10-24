@@ -1,5 +1,5 @@
 import { useState } from "react";
-import useScrollLock from "../../../hooks/useScrollLock";
+import useScrollLock from "../../../utils/hooks/useScrollLock";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
