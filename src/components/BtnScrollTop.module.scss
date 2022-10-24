@@ -1,0 +1,19 @@
+.btn {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0.5rem;
+  margin: 1.75rem 1rem;
+  background: lightgrey;
+  opacity: 0.75;
+  border-radius: 50%;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+
+  svg {
+    display: block;
+  }
+}
