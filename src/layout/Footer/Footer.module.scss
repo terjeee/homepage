@@ -14,10 +14,15 @@
       padding: layout.$page-padding;
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 0.5rem;
 
       svg {
         display: block;
+
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
   }
