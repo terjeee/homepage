@@ -4,9 +4,10 @@
 @use "../../css/variables/breakpoint.scss";
 
 .container {
-  min-height: 90vh;
+  min-height: calc(100vh - 65px);
   max-width: layout.$page-width;
   margin: auto;
+  margin-top: -25px;
 
   display: flex;
   flex-direction: column;

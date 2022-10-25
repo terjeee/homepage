@@ -23,7 +23,7 @@ export default function Contact() {
     const timeoutEmail = setTimeout(() => {
       if (email.length > 0 && !regexEmail.test(email)) return setEmailValid(false);
     }, 750);
-    return () => clearTimeout(timeoutEmail); // return (i useEffect) = clean-up
+    return () => clearTimeout(timeoutEmail); // return (i useEffect) = clean-up før main code
   }, [email]);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Contact() {
       if (message.length !== 0 && (message.length < 10 || message.length > 100))
         return setMessageValid(false);
     }, 750);
-    return () => clearTimeout(timeoutMessage); // return (i useEffect) = clean-up
+    return () => clearTimeout(timeoutMessage); // return (i useEffect) = clean-up før main code
   }, [message]);
 
   const sendEmail = (e) => {
@@ -47,11 +47,12 @@ export default function Contact() {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          navigate("/contact-success");
+          console.log(result);
+          navigate("/homepage/contact-success");
         },
         (error) => {
-          console.log(error.text);
+          console.log(error);
+          navigate("/homepage/contact-error");
         }
       );
   };
@@ -68,6 +69,7 @@ export default function Contact() {
             name="formEmail"
             id="formEmail"
             onChange={(event) => setEmail(event.target.value)}
+            autoFocus
           />
           {!emailValid && <p className={css.invalidMsg}>Please enter a valid email.</p>}
         </div>
@@ -80,7 +82,7 @@ export default function Contact() {
             onChange={(event) => setMessage(event.target.value)}
           />
           {!messageValid && (
-            <p className={css.invalidMsg}>Message needs to be between 10-250 characters.</p>
+            <p className={css.invalidMsg}>Message needs to be 10-250 characters.</p>
           )}
         </div>
         <button className={css.btnSendEmail} disabled={!formValid}>
