@@ -9,19 +9,19 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    link: "https://terjeee.github.io/2022-08-21-bank-landing-page/",
-    linkRepo: "https://github.com/terjeee/2022-08-21-bank-landing-page",
-    title: "EasyBank",
-    colorDot: "#F1E05A",
-    text: "Dummy landing page for a bank.",
-  },
-  {
-    id: 3,
     link: "https://terjeee.github.io/2022-08-14-ip-address-tracker/",
     linkRepo: "https://github.com/terjeee/2022-08-14-ip-address-tracker",
     title: "IP Address Tracker",
     colorDot: "#F1E05A",
     text: "Shows the location of an IP address on a map.",
+  },
+  {
+    id: 3,
+    link: "https://terjeee.github.io/2022-08-21-bank-landing-page/",
+    linkRepo: "https://github.com/terjeee/2022-08-21-bank-landing-page",
+    title: "EasyBank",
+    colorDot: "#F1E05A",
+    text: "Dummy landing page for a bank.",
   },
   {
     id: 4,

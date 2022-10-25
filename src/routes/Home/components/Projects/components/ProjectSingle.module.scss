@@ -6,6 +6,11 @@
   padding: 1rem;
   border-radius: layout.$border-radius;
   box-shadow: layout.$box-shadow;
+  cursor: pointer;
+
+  &:hover .titleText {
+    text-decoration: underline;
+  }
 
   .title {
     display: flex;
@@ -22,17 +27,17 @@
           &:hover {
             transform: scale(1.075);
           }
+
+          &:hover .titleText {
+            text-decoration: none;
+          }
         }
       }
 
-      .link {
+      .titleText {
         font-size: font.$size-m;
         font-weight: font.$weight-l;
         color: color.$link;
-
-        &:hover {
-          text-decoration: underline;
-        }
       }
 
       .label {
