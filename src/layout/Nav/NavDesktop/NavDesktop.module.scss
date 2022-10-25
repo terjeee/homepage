@@ -9,20 +9,22 @@
 }
 
 .nav {
-  position: relative;
-  z-index: 1000;
-  box-shadow: layout.$box-shadow;
-
   .container {
     margin: auto;
     max-width: layout.$page-width;
     padding: layout.$page-padding;
 
-    h2 {
-      padding: calc(layout.$page-padding / 2);
+    .list {
+      display: flex;
+      justify-content: flex-end;
+      gap: 1rem;
 
-      span {
-        color: color.$one;
+      li {
+        opacity: 0.25;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }

@@ -48,14 +48,12 @@ export default function Contact() {
       .then(
         (result) => {
           console.log(result.text);
-          return navigate("/contact-success");
+          navigate("/contact-success");
         },
         (error) => {
           console.log(error.text);
         }
       );
-
-    alert("Sent");
   };
 
   return (
