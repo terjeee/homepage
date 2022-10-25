@@ -14,7 +14,7 @@ export default function Footer() {
           <a href="https://www.github.com/terjeee" target="_blank" rel="noreferrer">
             <GitHubIcon />
           </a>
-          <Link to="/contact" onClick={handleScrollToTop}>
+          <Link to="/homepage/contact" onClick={handleScrollToTop}>
             <MailOutlineIcon />
           </Link>
         </div>

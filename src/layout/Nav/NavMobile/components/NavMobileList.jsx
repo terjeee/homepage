@@ -16,7 +16,7 @@ export default function NavMobileList(props) {
     <div className={css.container}>
       <ul className={css.list}>
         <li>
-          <HashLink smooth to="/#home" onClick={handleCloseMenu}>
+          <HashLink smooth to="/homepage" onClick={handleCloseMenu}>
             <button className={css.icon}>
               <HomeOutlinedIcon />
             </button>
@@ -24,7 +24,7 @@ export default function NavMobileList(props) {
           </HashLink>
         </li>
         <li>
-          <HashLink smooth to="/#projects" onClick={handleCloseMenu}>
+          <HashLink smooth to="/homepage#projects" onClick={handleCloseMenu}>
             <button className={css.icon}>
               <CodeIcon />
             </button>
@@ -32,7 +32,7 @@ export default function NavMobileList(props) {
           </HashLink>
         </li>
         <li>
-          <Link to="/contact" onClick={handleCloseMenu}>
+          <Link to="/homepage/contact" onClick={handleCloseMenu}>
             <button className={css.icon}>
               <MailOutlineIcon />
             </button>
