@@ -1,1 +1,1 @@
-Hosten on: https://terjeee.github.io/home/
+Hosted on: https://terjeee.github.io/home/
