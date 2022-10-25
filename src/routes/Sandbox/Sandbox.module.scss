@@ -1,0 +1,10 @@
+@use "../../css/variables/layout.scss";
+
+.sandbox {
+  min-height: 90vh;
+
+  .container {
+    max-width: layout.$page-width;
+    margin: auto;
+  }
+}

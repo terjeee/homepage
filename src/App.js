@@ -4,7 +4,7 @@ import Nav from "./layout/Nav/Nav";
 import Home from "./routes/Home/Home";
 import Contact from "./routes/Contact/Contact";
 import ContactSuccess from "./routes/Contact/ContactSuccess";
-import Experiment from "./routes/Experiment/Experiment";
+import Sandbox from "./routes/Sandbox/Sandbox";
 import Footer from "./layout/Footer/Footer";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
         <Route path="/home" element={<Home />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/contact-success" element={<ContactSuccess />} />
-        <Route path="/sandbox" element={<Experiment />} />
+        <Route path="/sandbox" element={<Sandbox />} />
         <Route path="*" element={<Navigate to="/home" />} />
       </Routes>
       <Footer />
