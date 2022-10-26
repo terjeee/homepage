@@ -35,23 +35,41 @@
 
       input {
         padding: 0.5rem;
-        border: 0.5px solid grey;
+        outline: 0.5px solid grey;
+        border: none;
         font-family: font.$family-2;
         border-radius: layout.$border-radius;
+
+        &:focus {
+          outline: 2px color.$link solid;
+        }
+      }
+
+      input.invalid {
+        outline: 2px red solid;
       }
 
       textarea {
         height: 6rem;
         padding: 0.5rem;
-        border: 0.5px solid grey;
+        outline: 0.5px solid grey;
+        border: none;
         font-family: font.$family-2;
         border-radius: layout.$border-radius;
         resize: none;
+
+        &:focus {
+          outline: 2px color.$link solid;
+        }
+      }
+
+      textarea.invalid {
+        outline: 2px red solid;
       }
 
       .invalidMsg {
-        padding-top: 0.1rem;
-        padding-left: 0.2rem;
+        padding: 0.2rem;
+        margin-bottom: -0.5rem;
         font-size: 0.8rem;
         font-weight: bold;
         color: red;

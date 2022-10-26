@@ -10,9 +10,12 @@ export default function Contact() {
   const navigate = useNavigate();
 
   const [email, setEmail] = useState("");
-  const [emailValid, setEmailValid] = useState(false);
+  const [emailValid, setEmailValid] = useState(null);
+  const cssEmail = emailValid ? "valid" : "invalid";
+
   const [message, setMessage] = useState("");
-  const [messageValid, setMessageValid] = useState(false);
+  const [messageValid, setMessageValid] = useState(null);
+  const cssMessage = messageValid ? "valid" : "invalid";
 
   const formData = useRef();
   const formValid =
@@ -37,24 +40,25 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
+    alert("Sent");
 
-    emailjs
-      .sendForm(
-        "service_contactForm",
-        "template_70fzocf",
-        formData.current,
-        "6hbDSK_0uSjg0vdP5"
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          navigate("/homepage/contact-success");
-        },
-        (error) => {
-          console.log(error);
-          navigate("/homepage/contact-error");
-        }
-      );
+    // emailjs
+    //   .sendForm(
+    //     "service_contactForm",
+    //     "template_70fzocf",
+    //     formData.current,
+    //     "6hbDSK_0uSjg0vdP5"
+    //   )
+    //   .then(
+    //     (result) => {
+    //       console.log(result);
+    //       navigate("/homepage/contact-success");
+    //     },
+    //     (error) => {
+    //       console.log(error);
+    //       navigate("/homepage/contact-error");
+    //     }
+    //   );
   };
 
   return (
@@ -64,6 +68,7 @@ export default function Contact() {
         <div className={css.formControl}>
           {/* <label htmlFor="formEmail">Email</label> */}
           <input
+            className={css[cssEmail]}
             type="email"
             placeholder="Email"
             name="formEmail"
@@ -76,6 +81,7 @@ export default function Contact() {
         <div className={css.formControl}>
           {/* <label htmlFor="formMsg">Message</label> */}
           <textarea
+            className={css[cssMessage]}
             name="formMsg"
             placeholder="Message"
             id="formMsg"
