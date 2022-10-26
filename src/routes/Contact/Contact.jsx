@@ -40,25 +40,24 @@ export default function Contact() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-    alert("Sent");
 
-    // emailjs
-    //   .sendForm(
-    //     "service_contactForm",
-    //     "template_70fzocf",
-    //     formData.current,
-    //     "6hbDSK_0uSjg0vdP5"
-    //   )
-    //   .then(
-    //     (result) => {
-    //       console.log(result);
-    //       navigate("/homepage/contact-success");
-    //     },
-    //     (error) => {
-    //       console.log(error);
-    //       navigate("/homepage/contact-error");
-    //     }
-    //   );
+    emailjs
+      .sendForm(
+        "service_contactForm",
+        "template_70fzocf",
+        formData.current,
+        "6hbDSK_0uSjg0vdP5"
+      )
+      .then(
+        (result) => {
+          console.log(result);
+          navigate("/homepage/contact-success");
+        },
+        (error) => {
+          console.log(error);
+          navigate("/homepage/contact-error");
+        }
+      );
   };
 
   return (
