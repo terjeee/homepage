@@ -1,5 +1,6 @@
 @use "../../../../css/variables/layout.scss";
 @use "../../../../css/variables/font.scss";
+@use "../../../../css/variables/breakpoint.scss";
 
 .projects {
   .container {
@@ -8,19 +9,29 @@
     padding: 0 layout.$page-padding;
 
     h1 {
-      height: 12.5vh;
-      padding: 2rem;
-      margin: auto;
+      margin: 2rem 0;
       font-family: font.$family-3;
-      font-size: 2.75rem;
+      font-size: 2.5rem;
       text-align: center;
-      letter-spacing: 10px;
+      letter-spacing: 7.5px;
     }
 
     .list {
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
+    }
+  }
+}
+
+@include breakpoint.laptop {
+  .projects {
+    .container {
+      h1 {
+        margin: 3rem 0;
+        font-size: 3rem;
+        letter-spacing: 10px;
+      }
     }
   }
 }
