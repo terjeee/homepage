@@ -11,15 +11,16 @@ export default function Contact() {
 
   const [email, setEmail] = useState("");
   const [emailValid, setEmailValid] = useState(null);
-  const cssEmail = emailValid ? "valid" : "invalid";
+  const cssEmail = !emailValid ? "invalid" : "";
 
   const [message, setMessage] = useState("");
   const [messageValid, setMessageValid] = useState(null);
-  const cssMessage = messageValid ? "valid" : "invalid";
+  const cssMessage = !messageValid ? "invalid" : "";
 
   const formData = useRef();
   const formValid =
     email.length > 0 && regexEmail.test(email) && message.length > 10 && message.length < 250;
+  const cssButton = !formValid ? "invalid" : "";
 
   useEffect(() => {
     setEmailValid(true);
@@ -90,7 +91,7 @@ export default function Contact() {
             <p className={css.invalidMsg}>Message needs to be 10-250 characters.</p>
           )}
         </div>
-        <button className={css.btnSendEmail} disabled={!formValid}>
+        <button className={`${css.btnSendEmail} ${css[cssButton]}`} disabled={!formValid}>
           SEND
         </button>
       </form>

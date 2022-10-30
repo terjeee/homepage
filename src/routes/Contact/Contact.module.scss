@@ -71,7 +71,6 @@
         padding: 0.2rem;
         margin-bottom: -0.5rem;
         font-size: 0.9rem;
-        // font-weight: bold;
         color: red;
       }
     }
@@ -87,6 +86,11 @@
       &:hover {
         background-color: color.$link-light;
       }
+    }
+
+    .btnSendEmail.invalid {
+      background-color: rgba(128, 128, 128, 0.555);
+      cursor: not-allowed;
     }
   }
 }
