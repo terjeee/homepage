@@ -70,14 +70,14 @@
       .invalidMsg {
         padding: 0.2rem;
         margin-bottom: -0.5rem;
-        font-size: 0.7rem;
-        font-weight: bold;
+        font-size: 0.9rem;
+        // font-weight: bold;
         color: red;
       }
     }
 
     .btnSendEmail {
-      padding: 0.75rem;
+      padding: 0.8rem;
       font-family: font.$family-2;
       font-weight: bolder;
       color: white;
@@ -102,6 +102,12 @@
       letter-spacing: 0;
       text-orientation: upright;
       writing-mode: tb-rl;
+    }
+
+    .contactForm {
+      .invalidMsg {
+        font-size: 0.7rem;
+      }
     }
   }
 }
