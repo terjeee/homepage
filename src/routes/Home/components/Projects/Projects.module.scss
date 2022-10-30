@@ -9,7 +9,10 @@
     padding: 0 layout.$page-padding;
 
     h1 {
-      margin: 2rem 0;
+      height: 15vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-family: font.$family-3;
       font-size: 2.5rem;
       text-align: center;
