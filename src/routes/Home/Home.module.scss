@@ -1,0 +1,8 @@
+@use "../../css/variables/layout.scss";
+@use "../../css/variables/font.scss";
+
+.container {
+  max-width: layout.$page-width;
+  margin: 1rem auto;
+  padding: 0 layout.$page-padding;
+}

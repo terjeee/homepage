@@ -1,5 +1,5 @@
-import { IconJs, IconSass, IconReact } from "../../../../../assets/icons/index";
-import { IconRedux, IconRouter } from "../../../../../assets/icons/index";
+import { IconJs, IconTs, IconSass, IconReact } from "../../../../assets/icons/index";
+import { IconRedux, IconRouter } from "../../../../assets/icons/index";
 import css from "./TechnologiesList.module.scss";
 
 export default function TechnologiesList() {
@@ -7,6 +7,7 @@ export default function TechnologiesList() {
     <ul className={css.icons}>
       <li>
         <IconJs />
+        {/* <IconTs /> */}
       </li>
       <li>
         <IconSass />
