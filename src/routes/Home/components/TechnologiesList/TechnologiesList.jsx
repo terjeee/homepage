@@ -1,13 +1,22 @@
+import { useState } from "react";
+
 import { IconJs, IconTs, IconSass, IconReact } from "../../../../assets/icons/index";
 import { IconRedux, IconRouter } from "../../../../assets/icons/index";
+
 import css from "./TechnologiesList.module.scss";
 
 export default function TechnologiesList() {
+  const [showJs, setShowJs] = useState(true);
+
+  const toggleJs = () => {
+    setShowJs(() => !showJs);
+  };
+
   return (
     <ul className={css.icons}>
-      <li>
-        <IconJs />
-        {/* <IconTs /> */}
+      <li className={css.toggleIcon} onClick={toggleJs}>
+        {showJs && <IconJs />}
+        {!showJs && <IconTs />}
       </li>
       <li>
         <IconSass />
