@@ -7,9 +7,9 @@ export default function ProjectSingle(props) {
       <a href={props.link} target="_blank" rel="noreferrer">
         <div className={css.title}>
           <div>
-            <a href={props.linkRepo} target="_blank" rel="noreferrer" className={css.linkRepo}>
+            <div className={css.linkRepo}>
               <IconRepository />
-            </a>
+            </div>
             <h4 className={css.titleText}>{props.title}</h4>
             <span className={css.label}>Public</span>
           </div>
