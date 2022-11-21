@@ -4,10 +4,12 @@ import ProjectSingle from "./components/ProjectSingle";
 import css from "./Projects.module.scss";
 
 export default function Projects() {
+  const projects = [...PROJECTS];
+
   return (
     <section className={css.projects} id="projects">
       <ul className={css.list}>
-        {PROJECTS.map((el) => (
+        {projects.reverse().map((el) => (
           <ProjectSingle
             key={el.id}
             title={el.title}
