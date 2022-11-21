@@ -6,7 +6,7 @@ import { IconRedux, IconRouter } from "../../../../assets/icons/index";
 import css from "./TechnologiesList.module.scss";
 
 export default function TechnologiesList() {
-  const [showJs, setShowJs] = useState(true);
+  const [showJs, setShowJs] = useState(false);
 
   const toggleJs = () => {
     setShowJs(() => !showJs);
