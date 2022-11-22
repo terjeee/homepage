@@ -7,10 +7,11 @@
   background: lightgrey;
   opacity: 0.75;
   border-radius: 50%;
+  transition: 0.25s;
 
   &:hover {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.1);
   }
 
   svg {
