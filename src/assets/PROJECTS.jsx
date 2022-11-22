@@ -5,7 +5,7 @@ export const PROJECTS = [
     linkRepo: "https://github.com/terjeee/2022.02.12-GuessNumber",
     title: "Guess the Number",
     colorDot: "#F1E05A",
-    text: "(:",
+    text: "Javascript | NB: bare for større skjermer",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const PROJECTS = [
     linkRepo: "https://github.com/terjeee/2022.05.27-Advice-Generator",
     title: "Advice Generator",
     colorDot: "#563D7C",
-    text: "Pulls advice from an API.",
+    text: "Javascript, API",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const PROJECTS = [
     linkRepo: "https://github.com/terjeee/2022-08-10-calculator-app",
     title: "Calculator",
     colorDot: "#F1E05A",
-    text: ":)",
+    text: "React",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const PROJECTS = [
     linkRepo: "https://github.com/terjeee/2022-08-21-bank-landing-page",
     title: "EasyBank",
     colorDot: "#F1E05A",
-    text: "Dummy landing page for a bank.",
+    text: "React, React Router",
   },
   {
     id: 5,
@@ -37,7 +37,7 @@ export const PROJECTS = [
     linkRepo: "https://github.com/terjeee/2022-08-14-ip-address-tracker",
     title: "IP Address Tracker",
     colorDot: "#F1E05A",
-    text: "Shows the location of an IP address on a map.",
+    text: "React, API",
   },
   {
     id: 6,
@@ -45,7 +45,7 @@ export const PROJECTS = [
     linkRepo: "https://github.com/terjeee/2022-09-04-rest-countries-api",
     colorDot: "#F1E05A",
     title: "Countries API",
-    text: "Pulls data from an API. Each country has a separate route with more details.",
+    text: "React, React Router, SCSS, API, localStorage, ",
   },
   {
     id: 7,
@@ -53,6 +53,6 @@ export const PROJECTS = [
     linkRepo: "https://github.com/terjeee/to-to/",
     colorDot: "#3178c6",
     title: "To-do List",
-    text: "Typescript, Redux, SCSS, Local Storage",
+    text: "Typescript, Redux, SCSS, localStorage",
   },
 ];
