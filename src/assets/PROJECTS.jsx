@@ -1,7 +1,7 @@
 export const PROJECTS = [
   {
     id: 1,
-    link: "https://terjeee.github.io/2022.02.12-GuessNumber/",
+    link: "https://terjeee.github.io/2022-02-12-GuessNumber/",
     linkRepo: "https://github.com/terjeee/2022.02.12-GuessNumber",
     title: "Guess the Number",
     colorDot: "#F1E05A",
