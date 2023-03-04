@@ -1,17 +1,17 @@
 import { useState } from "react";
 
 import {
-  IconJs,
   IconTs,
-  IconSass,
+  IconJs,
   IconReact,
-  IconTailwind,
-  IconSvelte,
-  IconNode,
   IconNext,
+  IconSvelte,
+  IconSass,
+  IconTailwind,
+  IconRedux,
+  IconNode,
   IconMongoDb,
 } from "../../../../assets/icons/index";
-import { IconRedux, IconRouter } from "../../../../assets/icons/index";
 
 import css from "./TechnologiesList.module.scss";
 
