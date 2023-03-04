@@ -1,13 +1,24 @@
 @use "../../../../css/variables/layout.scss";
 
-.icons {
+.container {
+  margin: 3.5rem 0;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  padding: 3rem 0;
+  flex-direction: column;
+  gap: 2.5rem;
 
-  .toggleIcon {
-    cursor: pointer;
+  .icons_col_one {
+    display: flex;
+    justify-content: space-evenly;
+
+    .toggleIcon {
+      cursor: pointer;
+    }
+  }
+
+  .icons_col_two {
+    display: flex;
+    justify-content: space-around;
   }
 
   li {
