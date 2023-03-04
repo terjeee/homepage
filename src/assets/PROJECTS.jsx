@@ -55,4 +55,12 @@ export const PROJECTS = [
     title: "To-do List",
     text: "Typescript, Redux, SCSS, localStorage",
   },
+  {
+    id: 8,
+    link: "https://terjeee.github.io/to-do/",
+    linkRepo: "https://github.com/terjeee/svelte-test",
+    colorDot: "#FF3E00",
+    title: "Bonsai - Landing page",
+    text: "SvelteKit, Tailwind, Typescript",
+  },
 ];
