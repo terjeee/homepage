@@ -57,7 +57,7 @@ export const PROJECTS = [
   },
   {
     id: 8,
-    link: "https://terjeee.github.io/to-do/",
+    link: "https://svelte-test-mauve.vercel.app/",
     linkRepo: "https://github.com/terjeee/svelte-test",
     colorDot: "#FF3E00",
     title: "Bonsai - Landing page",
