@@ -13,9 +13,9 @@ function App() {
       <Nav />
       <Routes>
         <Route path="/homepage" element={<Home />} />
+        <Route path="/homepage/sandbox" element={<Sandbox />} />
         <Route path="/homepage/contact" element={<Contact />} />
         <Route path="/homepage/contact-:feedback" element={<ContactFeedback />} />
-        <Route path="/homepage/sandbox" element={<Sandbox />} />
         <Route path="*" element={<Navigate to="/homepage" />} />
       </Routes>
       <Footer />
