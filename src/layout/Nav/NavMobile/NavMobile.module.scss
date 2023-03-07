@@ -12,9 +12,8 @@
     margin: auto;
     max-width: layout.$page-width;
     padding: calc(layout.$page-padding / 2);
-
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
   }
 
   h2 {

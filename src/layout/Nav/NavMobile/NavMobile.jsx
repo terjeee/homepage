@@ -19,15 +19,6 @@ export default function NavMobile() {
   return (
     <nav className={css.nav}>
       <div className={css.container}>
-        <div>
-          {/* {!menuOpen && (
-            <h2>
-              {"<"}
-              <span>terje</span>
-              {" />"}
-            </h2>
-          )} */}
-        </div>
         <button className={css.hamburgerMenu} onClick={handleToggleMenu}>
           {menuOpen ? <CloseIcon /> : <MenuIcon />}
         </button>
