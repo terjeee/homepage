@@ -1,15 +1,15 @@
+import ReactDOM from "react-dom";
+
 import css from "./Modal.module.scss";
 
 function Modal({ closeModal, children }) {
-  return (
-    <div className={css.background}>
-      <div className={css.modal}>
-        <header>
-          <button onClick={closeModal}>x</button>
-        </header>
+  return ReactDOM.createPortal(
+    <div className={css.background} onClick={closeModal}>
+      <div className={css.modal} onClick={(event) => event.stopPropagation()}>
         {children}
       </div>
-    </div>
+    </div>,
+    document.getElementById("root-modal")
   );
 }
 
