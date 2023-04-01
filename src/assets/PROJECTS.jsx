@@ -41,19 +41,19 @@ export const PROJECTS = [
   },
   {
     id: 6,
-    link: "https://terjeee.github.io/to-do/",
-    linkRepo: "https://github.com/terjeee/to-to/",
-    colorDot: "#3178c6",
-    title: "To-do List",
-    text: "React, Typescript, Redux, SCSS",
-  },
-  {
-    id: 7,
     link: "https://svelte-test-mauve.vercel.app/",
     linkRepo: "https://github.com/terjeee/svelte-test",
     colorDot: "#FF3E00",
     title: "Landing page",
     text: "SvelteKit, Tailwind, Typescript",
+  },
+  {
+    id: 7,
+    link: "https://terjeee.github.io/to-do/",
+    linkRepo: "https://github.com/terjeee/to-to/",
+    colorDot: "#3178c6",
+    title: "To-do List",
+    text: "React, Typescript, Redux, SCSS",
   },
   {
     id: 6,
