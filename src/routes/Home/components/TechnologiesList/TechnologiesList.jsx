@@ -4,7 +4,7 @@ import {
   IconTs,
   IconJs,
   IconReact,
-  IconNext,
+  IconVue,
   IconSvelte,
   IconSass,
   IconTailwind,
@@ -33,7 +33,7 @@ export default function TechnologiesList() {
           <IconReact />
         </li>
         <li>
-          <IconNext />
+          <IconVue />
         </li>
         <li>
           <IconSvelte />
