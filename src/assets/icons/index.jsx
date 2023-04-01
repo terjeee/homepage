@@ -11,3 +11,4 @@ export { default as IconRedux } from "./IconRedux";
 export { default as IconRouter } from "./IconRouter";
 export { default as IconRepository } from "./IconRepository";
 export { default as IconDots } from "./IconDots";
+export { default as IconVue } from "./IconVue";
