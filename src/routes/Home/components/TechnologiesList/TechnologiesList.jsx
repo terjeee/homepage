@@ -8,9 +8,9 @@ import {
   IconSvelte,
   IconSass,
   IconTailwind,
-  IconRedux,
   IconNode,
   IconMongoDb,
+  IconNext,
 } from "../../../../assets/icons/index";
 
 import css from "./TechnologiesList.module.scss";
@@ -47,7 +47,7 @@ export default function TechnologiesList() {
           <IconSass />
         </li>
         <li>
-          <IconRedux />
+          <IconNext />
         </li>
         <li>
           <IconNode />
