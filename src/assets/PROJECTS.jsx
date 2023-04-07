@@ -1,11 +1,11 @@
 export const PROJECTS = [
   {
     id: 1,
-    link: "https://terjeee.github.io/2022-02-12-GuessNumber/",
-    linkRepo: "https://github.com/terjeee/2022.02.12-GuessNumber",
-    title: "Guess the Number",
+    link: "https://terjeee.github.io/2022-08-21-bank-landing-page/",
+    linkRepo: "https://github.com/terjeee/2022-08-21-bank-landing-page",
+    title: "EasyBank - Landing Page",
     colorDot: "#F1E05A",
-    text: "Javascript  (bare for større skjermer)",
+    text: "React, React Router",
   },
   {
     id: 2,
@@ -25,14 +25,6 @@ export const PROJECTS = [
   },
   {
     id: 4,
-    link: "https://terjeee.github.io/2022-08-21-bank-landing-page/",
-    linkRepo: "https://github.com/terjeee/2022-08-21-bank-landing-page",
-    title: "EasyBank",
-    colorDot: "#F1E05A",
-    text: "React, React Router",
-  },
-  {
-    id: 5,
     link: "https://terjeee.github.io/2022-08-14-ip-address-tracker/",
     linkRepo: "https://github.com/terjeee/2022-08-14-ip-address-tracker",
     title: "IP Address Tracker",
@@ -40,12 +32,20 @@ export const PROJECTS = [
     text: "React, API",
   },
   {
-    id: 6,
+    id: 5,
     link: "https://svelte-test-mauve.vercel.app/",
     linkRepo: "https://github.com/terjeee/svelte-test",
     colorDot: "#FF3E00",
     title: "Landing page",
     text: "SvelteKit, Tailwind, Typescript",
+  },
+  {
+    id: 6,
+    link: "https://terjeee.github.io/2022-02-12-GuessNumber/",
+    linkRepo: "https://github.com/terjeee/2022.02.12-GuessNumber",
+    title: "Guess the Number",
+    colorDot: "#F1E05A",
+    text: "Javascript  (for større skjermer)",
   },
   {
     id: 7,
@@ -56,19 +56,19 @@ export const PROJECTS = [
     text: "React, Typescript, Redux, SCSS",
   },
   {
-    id: 6,
+    id: 8,
+    link: "https://terjeee.github.io/url-shorten/",
+    linkRepo: "https://github.com/terjeee/url-shorten",
+    colorDot: "#41B883",
+    title: "URL Shortener",
+    text: "Vue, Typescript",
+  },
+  {
+    id: 9,
     link: "https://terjeee.github.io/2022-09-04-rest-countries-api/",
     linkRepo: "https://github.com/terjeee/2022-09-04-rest-countries-api",
     colorDot: "#F1E05A",
     title: "Countries API",
     text: "React, React Router, SCSS",
-  },
-  {
-    id: 9,
-    link: "https://terjeee.github.io/url-shorten/",
-    linkRepo: "https://github.com/terjeee/url-shorten",
-    colorDot: "#41B883",
-    title: "Url Shortener",
-    text: "Vue, Typescript",
   },
 ];
