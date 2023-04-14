@@ -19,7 +19,7 @@ export default function NavBar() {
             </HashLink>
           </li>
           <li>
-            <Link to="/contact">
+            <Link to="/homepage/contact">
               <h3>contact</h3>
             </Link>
           </li>

@@ -16,14 +16,11 @@
 
     .list {
       display: flex;
-      justify-content: flex-end;
       gap: 1rem;
 
       li {
-        opacity: 0.25;
-
         &:hover {
-          opacity: 1;
+          opacity: 0.25;
         }
       }
     }

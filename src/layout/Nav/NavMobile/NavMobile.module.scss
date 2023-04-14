@@ -42,8 +42,8 @@
   }
 }
 
-// @include breakpoint.laptop {
-//   .nav {
-//     display: none;
-//   }
-// }
+@include breakpoint.laptop {
+  .nav {
+    display: none;
+  }
+}
