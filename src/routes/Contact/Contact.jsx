@@ -18,8 +18,7 @@ export default function Contact() {
   const cssMessage = !messageValid ? "invalid" : "";
 
   const formData = useRef();
-  const formValid =
-    email.length > 0 && regexEmail.test(email) && message.length > 10 && message.length < 250;
+  const formValid = email.length > 0 && regexEmail.test(email) && message.length > 5 && message.length < 250;
   const cssButton = !formValid ? "invalid" : "";
 
   useEffect(() => {
@@ -33,8 +32,7 @@ export default function Contact() {
   useEffect(() => {
     setMessageValid(true);
     const timeoutMessage = setTimeout(() => {
-      if (message.length !== 0 && (message.length < 10 || message.length > 100))
-        return setMessageValid(false);
+      if (message.length !== 0 && (message.length < 5 || message.length > 100)) return setMessageValid(false);
     }, 750);
     return () => clearTimeout(timeoutMessage); // return (i useEffect) = clean-up før main code
   }, [message]);
@@ -42,23 +40,16 @@ export default function Contact() {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_contactForm",
-        "template_70fzocf",
-        formData.current,
-        "6hbDSK_0uSjg0vdP5"
-      )
-      .then(
-        (result) => {
-          console.log(result);
-          navigate("/homepage/contact-success");
-        },
-        (error) => {
-          console.log(error);
-          navigate("/homepage/contact-error");
-        }
-      );
+    emailjs.sendForm("service_contactForm", "template_70fzocf", formData.current, "6hbDSK_0uSjg0vdP5").then(
+      (result) => {
+        console.log(result);
+        navigate("/homepage/contact-success");
+      },
+      (error) => {
+        console.log(error);
+        navigate("/homepage/contact-error");
+      }
+    );
   };
 
   return (
@@ -87,9 +78,7 @@ export default function Contact() {
             id="formMsg"
             onChange={(event) => setMessage(event.target.value)}
           />
-          {!messageValid && (
-            <p className={css.invalidMsg}>Message needs to be 10-250 characters.</p>
-          )}
+          {!messageValid && <p className={css.invalidMsg}>Message needs to be 5-250 characters.</p>}
         </div>
         <button className={`${css.btnSendEmail} ${css[cssButton]}`} disabled={!formValid}>
           SEND
