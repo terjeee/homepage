@@ -9,11 +9,11 @@ import css from "./NavMobile.module.scss";
 
 export default function NavMobile() {
   const [menuOpen, toggleMenuOpen] = useState(false);
-  const [toggleScollLock] = useScrollLock();
+  const [toggleScrollLock] = useScrollLock();
 
   const handleToggleMenu = () => {
     toggleMenuOpen((prevState) => !prevState);
-    toggleScollLock();
+    toggleScrollLock();
   };
 
   return (
