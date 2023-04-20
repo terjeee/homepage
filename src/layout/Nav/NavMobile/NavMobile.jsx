@@ -1,5 +1,5 @@
 import { useState } from "react";
-// import useScrollLock from "../../../utils/hooks/useScrollLock";
+import useScrollLock from "../../../utils/hooks/useScrollLock";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
@@ -9,11 +9,11 @@ import css from "./NavMobile.module.scss";
 
 export default function NavMobile() {
   const [menuOpen, toggleMenuOpen] = useState(false);
-  // const [toggleScrollLock] = useScrollLock();
+  const [toggleScrollLock] = useScrollLock();
 
   const handleToggleMenu = () => {
     toggleMenuOpen((prevState) => !prevState);
-    // toggleScrollLock();
+    toggleScrollLock();
   };
 
   return (
